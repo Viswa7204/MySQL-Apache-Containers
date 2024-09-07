@@ -6,7 +6,7 @@ This project creates two containers using Podman: one for MySQL and another for 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MySQL-Apache-Containers.git
+   git clone https://github.com/Viswa7204/MySQL-Apache-Containers.git
    cd MySQL-Apache-Containers
    ```
 
