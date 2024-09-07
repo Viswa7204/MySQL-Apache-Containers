@@ -1,0 +1,11 @@
+[Unit]
+Description=MySQL Container
+After=network.target
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/podman start -a mysql-container
+ExecStop=/usr/bin/podman stop -t 2 mysql-container
+
+[Install]
+WantedBy=multi-user.target

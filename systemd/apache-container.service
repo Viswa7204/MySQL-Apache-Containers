@@ -1,0 +1,11 @@
+[Unit]
+Description=Apache Container
+After=network.target
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/podman start -a apache-container
+ExecStop=/usr/bin/podman stop -t 2 apache-container
+
+[Install]
+WantedBy=multi-user.target
